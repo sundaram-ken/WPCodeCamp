@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Aria Label Demo</title>
+    
+    
+  </head>
+  <!-- Press Windows key + ctrl + enter to start Narrator. -->
+  <body>
+    
+    <main>
+      <article>
+        <!-- Contrast is too low! -->
+        <header style="color: darkblue; background-color: blue;">
+          <h1>A Ninja's Resume</h1>        
+          <h2>Check out this ninja's sweet/awesome resume!</h2>
+        </header>
+        <p>A screen reader needs to tell the user what's depicted in this image.</p>
+        <!-- This image needs an alt attribute. -->
+        <img alt="Ninjas fight with electric guitars on a rooftop." src="https://i.pinimg.com/564x/5c/97/3f/5c973f9978da50b8ab81dc4548ece89f.jpg">
+
+        <p>Later, you'll learn to make buttons with JavaScript. But first, we need to make the HTML accessible.</p>
+        <!-- This fake button needs a role, an aria-label and a tabindex. -->
+        <button>Click this button!</button>
+        <div role="button" aria-label="Click me!" tabindex="0" style="background-image: url('https://play-lh.googleusercontent.com/1z_bXjPx_xuGncHbz2GTRV-lsogWFrpf2RXxF4XIS7SRICEtRGhXwYC-N_pxhJl-bW8=w240-h480-rw'); height: 200px; width: 200px; background-size: cover;"></div>
+        
+        <!-- Sometimes there's an appropriate label in text outside the target element, so use aria-labelledby -->
+        <div role="button" aria-labelledby="ninja-weapons" tabindex="0" style="border: solid 3px green; height: 10em; width: 10em;">
+            <h3 id="ninja-weapons">Ninja's Weapons</h3>
+            <img src="https://i.ebayimg.com/images/g/T90AAOSwyohiUVG2/s-l500.jpg" style="max-width: 100%; max-height: 58%;" alt="nunchucks">
+        </div>
+        
+        
+    </article>
+    </main>
+  </body>
+
+</html>

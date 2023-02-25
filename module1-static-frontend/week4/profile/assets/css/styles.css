@@ -1,0 +1,274 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    font-family: 'Athiti', sans-serif;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+.left-side { 
+    /* parent: main */
+    /* children: .left-side-top, .left-side-bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}   
+
+.left-side-top {
+    /* parent: .left-side */
+    /* children: .name, .profile-pic, .title */
+    background-color: crimson;
+    height: 70%;
+}
+
+.left-side-top-content {
+    margin: calc(5vh + 4em) 15% 20% 15%;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;    
+}
+
+#name {
+    font-family: 'Rock Salt', cursive;
+    cursor:pointer;
+    transition:.6s;
+    margin: 0;
+}
+
+/*
+#name:before,
+#name:after {
+  content:attr(data-text);
+  transition:.6s;
+  position: relative;
+}
+
+#name:before {
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index:-1;
+  text-shadow:
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px;
+  -webkit-mask:repeating-linear-gradient(45deg, transparent 0 3px, rgba(0,0,0,0.5) 0 6px);
+          mask:repeating-linear-gradient(45deg, transparent 0 3px, rgba(0,0,0,0.5) 0 6px);
+}
+#name:hover {
+  transform:translate(-10px,-10px);
+}  
+#name:hover:before {
+  text-shadow:
+   1px 1px,
+   2px 2px,
+   3px 3px,
+   4px 4px,
+   5px 5px,
+   6px 6px,
+   7px 7px,
+   8px 8px,
+   9px 9px,||
+   10px 10px;
+}
+*/
+
+#profile-pic {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#job-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#job-title h3 {
+    line-height: 100%;
+    font-size: 16;
+}
+
+.left-side-top h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.left-side-bottom {
+    /* parent: .left-side */
+    /* children: .contact-me, .social-media */
+    flex-direction: column;
+    background-color: black;
+    height: 30%;
+    margin: 0;
+}
+
+.contact-me {
+
+}
+
+.contact-info {
+    color: white;
+    text-align: center;
+    list-style: none;
+    margin-top: 0;
+}
+
+.social-media {
+
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+.right-side {
+    /* parent: main */
+    background-color: white;
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+}
+
+.navlinks li{
+    list-style: none;
+    padding-left: 1%;
+    padding-right: 1%; 
+}
+
+.right-side-top {
+    /* parent: .right-side */
+    /* children: .navlinks */
+
+}
+
+.page-title {
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+    margin: 10%;
+    margin-top: 15%;
+    margin-bottom: 1%;
+}
+
+.right-side-bottom {
+    /* parent: .right-side */
+    /* children: .about-me, .bio-section */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end safe;
+
+}
+
+
+
+
+.page-content {
+    margin: 15%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+
+.img {
+    border: 1px solid black; 
+    width: 25%;
+    height: auto;
+}
+
+ul.gallery{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+ul.gallery li {
+    width: 15%;
+    margin: 5px;
+}
+
+ul.gallery li img {
+    display:block;
+    width:100%;
+    height:auto;
+    border: 1px solid black;
+
+  }
+
+
+@media screen and (max-width:850px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+
+    .left-side-top {
+        /* parent: .left-side */
+        /* children: .name, .profile-pic, .title */
+        flex-direction: column;
+        justify-content: center;
+        background-color: crimson;
+        height: 70%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-side-bottom {
+        /* parent: .left-side */
+        /* children: .contact-me, .social-media */
+        flex-direction: column;
+        background-color: black;
+        height: 30%;
+        width: 100%;
+    }
+
+    .right-side {
+        /* parent: main */
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    #profile-pic {
+        margin-left: 35%;
+        margin-right: 35%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Wild About Forms</title>
+  </head>
+
+  <body>
+    <main>
+        <h1>Weather Finder</h1>
+        <p>Use <a href='https://open-meteo.com/en/docs' target="_blank">this weather website</a> to get the latitude and longitude of your current location and enter the info below!</p>
+        <form action="https://api.open-meteo.com/v1/forecast" method="get" class="form-example">
+            <div>
+              <label for="mickeymouse">Enter your latitude: </label>
+              <input type="text" name="testymctestface" id="mickeymouse" required>
+            </div>
+            <div>
+              <label for="longitude">Enter your longitude: </label>
+              <input type="text" name="longitude" id="longitude" required>
+            </div>
+            <div>
+              <label for="hourly">In this field, just type this: <strong>temperature_2m</strong></label>
+              <input type="text" name="hourly" id="hourly">
+            </div>
+            <div>
+                <label for="unit">In this field, just type this: <strong>fahrenheit</strong></label>
+                <input type="text" name="temperature_unit" id="unit">
+              </div>
+            <div>
+              <input type="submit" value="Get the weather!">
+            </div>
+        </form>
+    </main>
+  </body>
+
+</html>

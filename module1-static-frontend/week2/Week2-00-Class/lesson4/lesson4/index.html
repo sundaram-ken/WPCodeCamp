@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Make This Accessible</title>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+  </head>
+  <!-- Press Windows key + ctrl + enter to start Narrator. -->
+  <body>
+    <main>
+      <aside>
+        <header style="color: darkblue; background-color: lightblue;">
+          <h1>Make This Page Accessible</h1>        
+          <h2>There are so many problems on this page! Fix them.</h2>
+        </header>
+        <a aria-label="LinkedIn" href="https://www.linkedin.com/in/petersurowski" ><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a aria-label="Instagram" href="https://www.instagram.com/wp_codecamp/" ><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </aside>
+      <img alt="A hot and greasy Detroit style pizza." src="https://www.acozykitchen.com/wp-content/uploads/2020/10/DetroitStylePizza-500x500.jpg">
+      <form method="get" action="">
+        <input autocomplete="off" type="text" name="query" title="search" dir="ltr" spellcheck="false" placeholder="Search for something">
+        <button role="search" type="submit" id="search-icon"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form>  
+    </main>
+  </body>
+
+</html>
