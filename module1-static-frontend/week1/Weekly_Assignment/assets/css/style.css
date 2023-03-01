@@ -1,0 +1,86 @@
+* {
+  background-color: rgb(234, 237, 255);
+  font-family: Geneva,Tahoma,Verdana,sans-serif; 
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h3 { 
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold; 
+}
+
+
+.navbar {
+  background-color: white;
+
+}
+
+.navlinks {
+  /* todo */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#gallery {
+  background-color: white;
+  margin: 3px;
+}
+
+.biotitle {
+  font-weight: bolder;
+  background-color: white;
+}
+
+.bio, .contact {
+  background-color: white;
+  border-style: groove;
+  margin: 50px;
+  padding: 20px 50px 20px;
+  color: black;
+}
+
+.info {
+  background-color: white;
+}
+
+img {
+  margin-left: 35px;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.biotext {
+  background-color: white;
+  margin: 35px;  
+  font-size: 16px;
+}
+
+.social-links {
+  display: flex;
+  margin-left: 50px;
+}
+
+#email {
+
+}
+
+#github {
+
+}
+
+#portfolio {
+
+}
