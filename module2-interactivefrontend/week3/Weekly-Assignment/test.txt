@@ -1,0 +1,51 @@
+Which is not a valid Javascript datatype
+    
+
+Which of the following is not a valid way to assign a variable in Javascript
+    var placeholder = value
+    let thisThing = somethingElse
+    var 1twoThree = four5
+    foo = bar
+
+What was the Javascript language originally called
+    Typescript
+    Java++
+    ECMAScript
+    Java On Rails
+
+Which of the following operators is used for assignment
+    ==
+    ===
+    =
+    !=
+
+Which of the following operators is not used for comparison
+    <
+    <>
+    ==
+    !=
+
+What is the correct syntax for an IF statement
+    if first != second { doThis }
+    if [[ time == irrelavent ]]; then doThat
+    if (blood > water) { doNot }
+    if (time = money) { do }
+
+What is the correct syntax for a ternary statement in Javascript
+    c = a if a < b else b
+    foo = bar > 0 ? 1 : 0
+    tool = (self >= shadow ? 46 : 2);
+    return (time == space = spacetime | empty )
+
+
+Which is not a valid way of defining an array in Javascript
+    myArray = ["one", "two", "three"]
+    myArray[] = ["dogs", "cats", "ferrets"]
+    myArray = new Array("apple", "orange", "grape")
+    myArray = []
+
+ Which of the following is not a valid Array prototype
+    every
+    indexOf
+    substr
+    reverse

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Quiz</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <ul class="nav">
+            <li class="highscore"><a href="highscores.html">View High Scores</a></li>
+            <li class="timer">0:00</li>
+        </ul>
+        <h1 class="title">Javascript Quiz</h1> 
+    </header>
+    <div class="container">
+        <div class="quiz">
+            <h2 class="question"></h2>
+            <form class="answers">
+                <input id="answer1-option" type="radio" name="answer1" value="placeholder1" />
+                <input id="answer2-option" type="radio" name="answer1" value="placeholder2" />
+                <input id="answer3-option" type="radio" name="answer1" value="placeholder3" />
+                <input id="answer4-option" type="radio" name="answer1" value="placeholder4" />
+            </form>
+        </div>
+        <div class="buttons">   
+            <input class="submit-answer button" type="button" formaction="submitAnswer()" value="Answer" />
+        </div>
+    </div>
+    
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
