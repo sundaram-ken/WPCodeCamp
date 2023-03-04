@@ -11,20 +11,27 @@
 <body>
     <header>
         <ul class="nav">
-            <li class="highscore"><a href="highscores.html">View High Scores</a></li>
-            <li class="timer">0:00</li>
+            <li class="highscore nav"><a href="highscores.html">View High Scores</a></li>
+            <li class="timer top">0:00</li>
         </ul>
         <h1 class="title">Javascript Quiz</h1> 
     </header>
+
     <div class="container">
         <div class="quiz">
-            <h2 class="question"></h2>
-            <form class="answers">
-                <input id="answer1-option" type="radio" name="answer1" value="placeholder1" />
-                <input id="answer2-option" type="radio" name="answer1" value="placeholder2" />
-                <input id="answer3-option" type="radio" name="answer1" value="placeholder3" />
-                <input id="answer4-option" type="radio" name="answer1" value="placeholder4" />
+
+            <form class="answers" id="answer-form">
+                <h2 class="question"></h2>
+                <input class="options" id="option1" type="radio" name="selection1" >
+                <label id="option1-label" for="option1"></label><br>
+                <input class="options" id="option2" type="radio" name="selection2" >
+                <label id="option2-label" for="option2"></label><br>
+                <input class="options" id="option3" type="radio" name="selection3" >
+                <label id="option3-label" for="option3"></label><br>
+                <input class="options" id="option4" type="radio" name="selection4" >
+                <label id="option4-label" for="option4"></label><br>
             </form>
+
         </div>
         <div class="buttons">   
             <input class="submit-answer button" type="button" formaction="submitAnswer()" value="Answer" />
