@@ -1,12 +1,17 @@
-header > ul.nav {
+ul {
     display: flex;
-}
-
-ul > li.nav {
     justify-content: space-between;
+    padding-left: 0;
 }
 
-header > h1 {
+li {
+    list-style: none;
+
+    /*display: inline;
+    padding-left: 5em;*/
+}
+
+header>h1 {
     margin: auto;
     width: 50%;
     text-align: center
@@ -17,7 +22,7 @@ header > h1 {
     width: 50%;
 }
 
-form.answers{
+form.answers {
     margin: auto;
     width: 50%;
 }
