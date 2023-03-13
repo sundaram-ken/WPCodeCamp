@@ -21,20 +21,46 @@ header>h1 {
 
 .intro {
     margin: auto;
-    width: 50%;
+    width: max-content;
     padding: 20px;
     font-size: 1.25em;
     text-justify: auto;
+
+}
+
+.initialsDiv {
+    margin:auto;
+    width: 15%;
+
+}
+
+#initials-label {
+    margin: 10px;
+}
+
+#initials-txt {
+    width: 40px;
 }
 
 button {
     display: block;
     font-size: 1em;
+    text-align: center;
     color: green;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
     width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: -3px 3px 5px rgb(78, 78, 78);
+}
+
+.buttons {
+    font-size: 1em;
+    text-align: center;
+    color: blue;
+    margin: 10px;
     height: 40px;
     border-radius: 5px;
     box-shadow: -3px 3px 5px rgb(78, 78, 78);
@@ -62,9 +88,13 @@ button {
     color: orangered
 }
 
+.question {
+    width: max-content;
+}
+
 #question {
     margin: auto;
-    width: 50%;
+    width: max-content;
     padding: 20px;
     font-size: 1.75em
 }
@@ -76,7 +106,8 @@ button {
 }
 
 .choices {
-    padding: 5px;
+    margin: auto;
+    width: min-content; 
 }
 
 .options {
@@ -93,11 +124,13 @@ button {
     border: solid 1px black;
     margin: 2px;
     border-radius: 5px;
-    display: inline-block;
+    display: block;
     margin-left: 5px;
     padding-left: 10px;
-    width: 85%;
-    padding: 5px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: max-content;
     box-shadow: -3px 3px -3px 3px 5px rgb(78, 78, 78);
     background-color: rgb(117, 184, 252);
     /*text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;*/
@@ -118,4 +151,48 @@ button {
 
 .wrong:checked+label {
     background-color: red;
+}
+
+.top {
+    font-size: 1.15em;
+    font-weight: bolder;
+    color: blue;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#timer {
+    font-size: 1.45em;
+}
+
+.scores {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}s
+
+.hs {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: inset 2px black;
+    border-right: inset 2px black;
+}
+
+.keys,.values {
+    font-size: 1.75em;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: dotted 1.5px black;
+    border-bottom: dotted 1.5px black;
+    font-family: "droid-sans-mono", monospace;
+    text-transform: uppercase;
+
+}
+
+.hs-buttons {
+    display: flex;
+    justify-content: center;
 }
